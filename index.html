@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stylish ASCII World</title>
+  <title>ASCII Playground</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="ascii-box">
-    <pre class="ascii-art">
+  <div class="background"></div>
+
+  <div class="container">
+    <pre id="asciiArt" class="ascii-art">
      ____   ___  _   _ ____  _     ___ _____ _   _ 
     |  _ \ / _ \| \ | |  _ \| |   / _ \_   _| \ | |
     | | | | | | |  \| | | | | |  | | | || | |  \| |
     | |_| | |_| | |\  | |_| | |__| |_| || | | |\  |
     |____/ \___/|_| \_|____/|_____\___/ |_| |_| \_|
 
-    Welcome to the Stylized ASCII World!
-    Where code meets creativity ✨
+     🌟 Welcome to the Upgraded ASCII World! 🌟
     </pre>
 
-    <div class="fun-text">
-      <p>💡 This demo shows how simple text + CSS can be fun!</p>
-      <p class="rainbow">No images, no JavaScript — just imagination.</p>
-      <p>Try editing the style for more effects!</p>
-    </div>
+    <p class="fun-text">Click the button below and watch the colors change! 🎨</p>
+    <button onclick="changeColor()">✨ Change Vibe</button>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
