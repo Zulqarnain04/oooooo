@@ -1,0 +1,45 @@
+body {
+  background-color: #111;
+  color: #f0f0f0;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.ascii-box {
+  text-align: center;
+  animation: pulse 4s infinite;
+}
+
+.ascii-art {
+  color: #00ffcc;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  white-space: pre;
+}
+
+.fun-text p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.rainbow {
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation: colorShift 6s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@keyframes colorShift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
